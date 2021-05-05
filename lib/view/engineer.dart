@@ -16,11 +16,11 @@ class Engineer extends StatelessWidget {
       ),
       body: Center(
         child: Consumer<AppController>(
-          builder: (context, contructor, child) {
-            var contructorTeam = contructor.count;
-            var contructorSallary = (contructorTeam / 4);
+          builder: (context, engineer, child) {
+            var engineerTeam = engineer.count;
+            var engineerSallary = (engineerTeam / 2);
 
-            return Text(contructorSallary.toString());
+            return Text(engineerSallary.toString());
           },
         ),
       ),
